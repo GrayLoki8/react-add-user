@@ -1,9 +1,10 @@
 import Card from "./Card";
 import Button from "./Button";
 import styles from "./ErrorModal.module.css"
+import {Fragment} from "react";
 const ErrorModal=(props)=>{
     return (
-    <div>
+    <Fragment>
         <div className={styles.backdrop} onClick={props.onCloseModal}></div>
 
         <Card className={styles.modal}>
@@ -19,6 +20,6 @@ const ErrorModal=(props)=>{
             <Button onClick={props.onCloseModal}>Close</Button>
         </footer>
     </Card>
-    </div>)
+    </Fragment>)
 }
 export default ErrorModal
