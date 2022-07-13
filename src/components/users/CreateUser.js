@@ -13,6 +13,7 @@ const CreateUser=(props)=>{
       if (+inputAge<1){
           return;
       }
+      props.onCreateUser(inputName,inputAge);
         setInputName("");
         setInputAge("");
 
